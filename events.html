@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفعاليات - تجمع أبناء وقاطني جديدة عرطوز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><link rel="icon" href="https://scontent.fhty4-1.fna.fbcdn.net/v/t39.30808-6/424614407_3474746016004413_6345957109964295171_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=w403U0HDfZsQ7kNvgGEWybs&_nc_oc=AdjZQ7MfqJ5Qnje_K7Stp4rHljyknDg0zMr5vm-K3CwcjgobJtIJk0RT5S7jtELchb0&_nc_zt=23&_nc_ht=scontent.fhty4-1.fna&_nc_gid=Ar8sERoWAkDGeHWpuMt7Mgc&oh=00_AYCYSXMTbmRmoImcm4lM1-gxYeNZofuybrFfA1-RnRUVMA&oe=67B6A710">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <h1>تجمع أبناء وقاطني جديدة عرطوز</h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="events.html" class="active">الفعاليات</a></li>
+                <li><a href="gallery.html">معرض الصور والفيديوهات</a></li>
+                
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>فعاليات المجتمع</h2>
+            <p>تعرف على الفعاليات القادمة في جديدة عرطوز</p>
+        </section>
+
+        <section class="events-calendar">
+            <div class="calendar-header">
+                <button class="btn btn-primary" id="prevMonth"><i class="fas fa-chevron-right"></i></button>
+                <h3 id="currentMonth">شهر</h3>
+                <button class="btn btn-primary" id="nextMonth"><i class="fas fa-chevron-left"></i></button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar will be generated dynamically -->
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <h3>الفعاليات القادمة</h3>
+            <div class="events-list">
+                <!-- Events will be loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#">عن المجتمع</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>  تجمع أبناء وقاطني جديدة عرطوز. جميع الحقوق محفوظة. 2025 &copy;</p>
+            <div class="footer-links">
+                <a href="admins.html" class="admin-link">المشرفون</a>
+                <p class="designer-credit"><span>  تم تصميمه بواسطة وسيم البقاعي CODER SKANDAR</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>

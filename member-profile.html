@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي - جديدة عرطوز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><link rel="icon" href="https://scontent.fhty4-1.fna.fbcdn.net/v/t39.30808-6/424614407_3474746016004413_6345957109964295171_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=w403U0HDfZsQ7kNvgGEWybs&_nc_oc=AdjZQ7MfqJ5Qnje_K7Stp4rHljyknDg0zMr5vm-K3CwcjgobJtIJk0RT5S7jtELchb0&_nc_zt=23&_nc_ht=scontent.fhty4-1.fna&_nc_gid=Ar8sERoWAkDGeHWpuMt7Mgc&oh=00_AYCYSXMTbmRmoImcm4lM1-gxYeNZofuybrFfA1-RnRUVMA&oe=67B6A710">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <h1>أبناء وقاطني جديدة عرطوز</h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="admins.html" class="active">الأعضاء</a></li>
+                <li><a href="gallery.html">معرض الصور والفيديوهات</a></li>
+                
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="events.html">الفعاليات</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+        <div class="profile-header">
+            <div class="profile-cover">
+                <img src="images/default-cover.jpg" alt="صورة الغلاف">
+            </div>
+            <div class="container">
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <img src="images/default-avatar.png" alt="الصورة الشخصية">
+                    </div>
+                    <div class="profile-details">
+                        <h1>أحمد محمد</h1>
+                        <p class="profile-title">مدرس</p>
+                        <p class="profile-location"><i class="fas fa-map-marker-alt"></i> وسط البلدة</p>
+                        <div class="profile-stats">
+                            <span><i class="fas fa-star"></i> التقييم: 4.5</span>
+                            <span><i class="fas fa-users"></i> المساهمات: 15</span>
+                            <span><i class="fas fa-calendar-alt"></i> عضو منذ: 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="profile-content">
+                <div class="profile-tabs">
+                    <button class="tab-btn active">نبذة</button>
+                    <button class="tab-btn">المساهمات</button>
+                    <button class="tab-btn">المعرض</button>
+                    <button class="tab-btn">التقييمات</button>
+                </div>
+
+                <div class="tab-content active">
+                    <div class="card">
+                        <h2>نبذة عني</h2>
+                        <p>مدرس في مدرسة جديدة عرطوز الثانوية، متخصص في تدريس الرياضيات. أؤمن بأهمية التعليم في تطوير المجتمع.</p>
+                        
+                        <h3>معلومات التواصل</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> ahmad@example.com</li>
+                            <li><i class="fas fa-phone"></i> +963 911 234 567</li>
+                            <li><i class="fas fa-globe"></i> www.ahmad-teacher.com</li>
+                        </ul>
+
+                        <h3>المهارات والاهتمامات</h3>
+                        <div class="skills-tags">
+                            <span class="tag">تدريس الرياضيات</span>
+                            <span class="tag">التعليم الإلكتروني</span>
+                            <span class="tag">العمل التطوعي</span>
+                            <span class="tag">تطوير المناهج</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="contributions-grid">
+                        <div class="card contribution-card">
+                            <div class="contribution-header">
+                                <span class="date">15 فبراير 2025</span>
+                                <span class="type tag">مبادرة تعليمية</span>
+                            </div>
+                            <h3>دورة مجانية في الرياضيات</h3>
+                            <p>تنظيم دورة مجانية لطلاب الشهادة الثانوية في مركز الشباب.</p>
+                            <div class="contribution-footer">
+                                <span><i class="fas fa-heart"></i> 25</span>
+                                <span><i class="fas fa-comment"></i> 10</span>
+                            </div>
+                        </div>
+                        <!-- يمكن إضافة المزيد من المساهمات -->
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/gallery1.jpg" alt="صورة من نشاط تعليمي">
+                        </div>
+                        <!-- يمكن إضافة المزيد من الصور -->
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="reviews-grid">
+                        <div class="card review-card">
+                            <div class="reviewer-info">
+                                <img src="images/default-avatar.png" alt="المقيم">
+                                <div>
+                                    <h4>محمد أحمد</h4>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">10 فبراير 2025</span>
+                            </div>
+                            <p class="review-text">أستاذ متميز وملتزم. ساعد ابني كثيراً في فهم الرياضيات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن الموقع</h3>
+                    <p>منصة مجتمعية لأهالي وقاطني جديدة عرطوز للتواصل والمشاركة في حياة المجتمع</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="admins.html">الأعضاء</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                        <li><a href="news.html">الأخبار</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>  تجمع أبناء وقاطني جديدة عرطوز. جميع الحقوق محفوظة. 2025 &copy;</p>
+                <p class="designer-credit"><span>  تم تصميمه بواسطة وسيم البقاعي CODER SKANDAR</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="member-profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - تجمع أبناء وقاطني جديدة عرطوز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth-style.css"><link rel="icon" href="https://scontent.fhty4-1.fna.fbcdn.net/v/t39.30808-6/424614407_3474746016004413_6345957109964295171_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=w403U0HDfZsQ7kNvgGEWybs&_nc_oc=AdjZQ7MfqJ5Qnje_K7Stp4rHljyknDg0zMr5vm-K3CwcjgobJtIJk0RT5S7jtELchb0&_nc_zt=23&_nc_ht=scontent.fhty4-1.fna&_nc_gid=Ar8sERoWAkDGeHWpuMt7Mgc&oh=00_AYCYSXMTbmRmoImcm4lM1-gxYeNZofuybrFfA1-RnRUVMA&oe=67B6A710">
+</head>
+<body class="auth-page">
+    <div class="auth-wrapper">
+        <div class="auth-side">
+            <div class="auth-content">
+                <div class="site-logo">
+                    <a href="index.html">
+                        <h1>أبناء وقاطني جديدة عرطوز</h1>
+                    </a>
+                </div>
+                <div class="auth-welcome">
+                    <h2>انضم إلى مجتمعنا!</h2>
+                    <p>سجل حسابك الآن للمشاركة في نشاطات المجتمع والتفاعل مع الأعضاء
+                       <p> تم تصميمه بواسطة وسيم البقاعي CODER SKANDAR</p>
+                    </p>
+                     
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="auth-main">
+            <div class="auth-box">
+                <h2>إنشاء حساب جديد</h2>
+                <form id="registerForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="fullName">الاسم الكامل</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">تأكيد كلمة المرور</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">أوافق على <a href="#">الشروط والأحكام</a> و <a href="#">سياسة الخصوصية</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">إنشاء حساب</button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>أو</span>
+                </div>
+                
+                <div class="social-auth">
+                    <button class="btn btn-social btn-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        التسجيل عبر فيسبوك
+                    </button>
+                    <button class="btn btn-social btn-google">
+                        <i class="fab fa-google"></i>
+                        التسجيل عبر جوجل
+                    </button>
+                </div>
+                
+                <div class="auth-links">
+                    
+                    <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                </div>
+            </div>
+            
+            <div class="auth-footer">
+                <a href="index.html">العودة للصفحة الرئيسية</a>
+                <p>  تجمع أبناء وقاطني جديدة عرطوز. جميع الحقوق محفوظة. 2025 &copy;</p>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+/* Auth Pages Specific Styles */
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #064d27 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.auth-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Side Panel */
+.auth-side {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.auth-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.site-logo {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.site-logo a {
+    text-decoration: none;
+}
+
+.site-logo h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.auth-welcome {
+    text-align: center;
+}
+
+.auth-welcome h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.auth-welcome p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Main Auth Area */
+.auth-main {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.auth-box h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Form Styles */
+.auth-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"],
+.auth-form input[type="tel"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #eee;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+.remember-me,
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.remember-me input[type="checkbox"],
+.terms input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.3rem;
+}
+
+/* Social Auth */
+.auth-divider {
+    text-align: center;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #eee;
+}
+
+.auth-divider::before { right: 0; }
+.auth-divider::after { left: 0; }
+
+.auth-divider span {
+    background: white;
+    padding: 0 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.social-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-facebook {
+    background: #f5f5f5;
+    color: #1877f2;
+}
+
+.btn-google {
+    background: #f5f5f5;
+    color: #db4437;
+}
+
+.btn-facebook:hover {
+    background: #1877f2;
+    color: white;
+}
+
+.btn-google:hover {
+    background: #db4437;
+    color: white;
+}
+
+/* Links */
+.auth-links {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.auth-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.auth-footer {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-wrapper {
+        flex-direction: column;
+    }
+
+    .auth-side {
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .site-logo h1 {
+        font-size: 2rem;
+    }
+
+    .auth-welcome h2 {
+        font-size: 1.5rem;
+    }
+
+    .auth-welcome p {
+        font-size: 1rem;
+    }
+
+    .auth-main {
+        padding: 1rem;
+    }
+
+    .auth-box {
+        padding: 1.5rem;
+    }
+
+    .auth-footer {
+        position: relative;
+        margin-top: 2rem;
+    }
+}
+
+/* RTL Specific Adjustments */
+[dir="rtl"] .toggle-password {
+    left: auto;
+    right: auto;
+    left: 1rem;
+}
+
+[dir="rtl"] .auth-divider::before {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .auth-divider::after {
+    left: auto;
+    right: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-box {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Focus States */
+.auth-form input:focus {
+    box-shadow: 0 0 0 3px rgba(11, 128, 64, 0.1);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 3px rgba(11, 128, 64, 0.2);
+}
+
+/* Error States */
+.auth-form input.error {
+    border-color: var(--secondary-color);
+}
+
+.error-message {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Success States */
+.auth-form input.success {
+    border-color: var(--primary-color);
+}
+
+.success-message {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
